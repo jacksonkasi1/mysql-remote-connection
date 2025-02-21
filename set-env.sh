@@ -15,6 +15,7 @@ echo "DB_PORT=$DB_PORT" >> $ENV_FILE
 echo "DB_USER=$DB_USER" >> $ENV_FILE
 echo "DB_PASSWORD=$DB_PASSWORD" >> $ENV_FILE
 echo "DB_NAME=$DB_NAME" >> $ENV_FILE
+echo "DB_CA=$DB_CA" >> $ENV_FILE
 
 # Log the created .env file for debugging
 echo "✅ Environment variables saved to $ENV_FILE"
