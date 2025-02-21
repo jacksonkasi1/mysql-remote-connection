@@ -11,10 +11,11 @@ const dbConfig = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
-  ssl: {
-    ca: process.env.DB_CA.replace(/\\n/g, "\n"), // Convert escaped newlines to actual newlines
-    rejectUnauthorized: true,
-  },
+  // Disable SSL for testing purposes
+  // ssl: {
+  //   ca: process.env.DB_CA.replace(/\\n/g, "\n"), // Convert escaped newlines to actual newlines
+  //   rejectUnauthorized: true,
+  // },
 };
 
 // MySQL Database Connection
