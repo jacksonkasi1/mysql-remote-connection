@@ -1,0 +1,13 @@
+runtime: javascript
+
+startCommand: pnpm run start
+
+# Set environment variables & install pnpm
+buildCommand:
+  chmod +x ./set-env.sh &&
+  . ./set-env.sh &&
+  npm install -g pnpm turbo &&
+  pnpm install --no-frozen-lockfile
+
+port: 5000
+memory: 1024
